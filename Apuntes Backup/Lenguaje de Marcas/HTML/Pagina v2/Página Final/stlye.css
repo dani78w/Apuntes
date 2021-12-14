@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@media only screen and (min-width:660px){
+body{
+    margin:0px;
+    margin:0px;
+    display:grid;
+    grid-template-columns:120px 820px auto;   
+    grid-template-rows:30px 250px auto auto 50px auto ;
+    grid-row-gap:0px;                          
+    grid-column-gap:0px;
+    background-color:white;
+
+}
+.cabecera{
+    display:grid;
+    grid-column-start: 1;                       grid-column-end:4;
+    grid-row:1;                                 grid-template-rows:none;
+    grid-template-columns:auto auto 40px auto auto;
+    height:100%;
+    width:100%;
+    border: none solid white;
+    background-color:white;
+}
+
+@keyframes TextSlideV{
+    0%{margin-top:-200px;}
+    100%{margin-top: 400px;}
+    
+}
+@keyframes TextSlideH{
+    0%{margin-left:-200px;}
+    100%{margin-left:165px;}
+    
+}
+.sideMenu{
+    grid-column: 1;
+    grid-row:2; 
+    background-color:white;
+    width:100%;
+    height:100%;
+    justify-self: center;
+    border: none solid black;
+}
+.sideMenu p{text-align:left;
+    color: black;
+    font-size:80px;
+    font-family: 'Ubuntu', sans-serif;
+    transform: rotate(-90deg);
+    margin-top: 400px;
+    animation-name: TextSlideV;
+    animation-duration:5s;
+    }
+.sideMenu img{
+        grid-row:1;
+        width:60px;
+        height:80px;
+        margin-top:-40px;
+        transform: rotate(-90deg);
+        margin-left:35px;
+    }
+    
+.flechaF{
+    display:grid;
+    grid-column: 1;
+    grid-row:3;
+    height:100px;
+    width:100px;
+    background-color: white;
+    background-image:url(flecha.png);
+    background-size:50px;
+    transform: rotate(270deg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.frame{
+    display:grid;
+    grid-column-start: 2; grid-column-end:4;
+    grid-row-start:1; grid-row-end:6;
+    background-image:url(fondo.jpg);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    justify-self: center;
+    grid-template-columns: 100px  620px auto;
+    grid-template-rows:75px 50px 15px 3px auto;
+
+
+}
+.frame h1{
+    text-align:left;
+    color: white;
+    font-size:80px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top:-10px;
+    margin-left:165px;
+    animation-name: TextSlideH;
+    animation-duration:5s;
+    grid-column:1;
+    grid-row:1;
+      
+    
+    
+}
+/*-------------------------------*/
+.subMenu{
+    display:grid;
+    grid-column-start:2;    grid-column-end:3;
+    grid-row: 2;
+    height:100%;
+    width:100%;
+    border: none solid white;
+    background-color:rgba(255, 255, 255, 0);
+    grid-template-columns:auto auto auto auto auto auto auto auto;
+    grid-template-rows:1;
+}
+@keyframes subIconMotion {
+    0%{background-position:220px;opacity:0%;}
+    100%{background-position:center;opacity:100%;}
+    
+}
+.subIcon1{
+    display:grid;
+    grid-column:1;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(hogar.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:1s;
+    background-position: center;
+    background-size:50%;
+    transition:background-size  0.1s;
+}
+.panel{
+    display:none;
+    position: absolute;
+    top:120px;
+    height:215px;
+    width:620px;
+    background-image: url(Vector1.png);
+    background-repeat:no-repeat;
+    background-size:600px;
+    background-position: bottom;
+}
+.panelIcon{
+    display:inline-block;
+    margin-top:65px;
+    margin-left:40px;
+    width: 100px;
+    height:100px;
+    border-radius:150px;
+
+    background-image: url(iconn2.gif);
+    background-size:150px;
+    background-position: center;
+}
+.subIcon1:hover .panel{
+    display: inline-block;
+
+}
+.panel:hover{
+    display:inline-block;
+}
+.subIcon1:hover{
+    background-size:50px;
+}
+.subIcon2{
+    display:grid;
+    grid-column:2;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(circulo-de-color.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:1.5s;
+    background-position: center;
+    background-size:50%;
+    transition:background-size  0.1s;
+}
+.subIcon2:hover{
+    background-size:50px;
+}
+.subIcon3{
+    display:grid;
+    grid-column:3;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(corazon.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:2s;
+    background-position: center;
+    background-size:50%;
+    transition:background-size  0.1s;
+}
+.subIcon3:hover{
+    background-size:50px;
+}
+.subIcon4{
+    display:grid;
+    grid-column:4;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(diamante.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:2.5s;
+    background-position: center;
+    background-size:50%;
+    transition:background-size  0.1s;
+}
+.subIcon4:hover{
+    background-size:50px;
+}
+.subIcon5{
+    display:grid;
+    grid-column:5;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(carpeta.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:3s;
+    background-position: center;
+    background-size:50%;
+    transition:background-size  0.1s;
+}
+.subIcon5:hover{
+    background-size:50px;
+}
+/*-------------------------------*/
+@keyframes motionBar {
+    0%{opacity:0%;}
+    100%{opacity:100%;}
+    
+}
+.motionBar{
+    display:grid;
+    grid-column-start:2;    grid-column-end:2;
+    grid-row: 4;
+    height:100%;
+    width:400px;
+    border: none solid white;
+    background-color:rgba(255, 255, 255, 0.274);
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows:1;
+    animation:motionBar 1s ;
+}
+@keyframes motion{
+    0%{background-position:400px;}
+    100%{background-position:20px;}
+    
+}
+.motion{
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(motion.png);
+
+    animation-name:motion;
+    animation-duration:2s;
+    animation-timing-function: cubic-bezier(0, 0, 2.5, 0);
+    background-repeat:no-repeat;
+    background-position:20px;
+    background-size:50px;
+}
+.Conjunto1{
+    display:block;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row:5;
+    width:100%;
+    height:100%;}
+  
+}
+.conj{
+    display:inline-block;
+    background-color:rgba(255, 255, 255, 0.082);
+
+    background-position:center;
+    background-repeat: no-repeat;
+    width:420px;    height:700px;
+    background-size:150%;
+    transition:background-size  0.15s;
+    animation-duration:2.7s;
+
+}
+.iso{
+    display:inline-block;
+    animation:motionBar 5s ;
+    background-color:rgba(255, 255, 255, 0.082);
+    background-image:url(Profile.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    width:420px;    height:420px;
+
+    background-size:75%;
+    transition:background-size  0.15s;
+    animation-duration:2.7s;
+
+}
+.iso:hover{
+    background-size:90%;
+
+}
+.cab{
+    display:inline-block;
+    animation:motionBar 5s ;
+    background-color:rgba(255, 255, 255, 0.082);
+    background-image:url(CABALLERA.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    width:420px;    height:420px;
+    background-position-y:-150px;
+    background-size:150%;
+    transition:background-size  0.15s;
+    animation-duration:2.7s;
+
+}
+.cab:hover{
+    background-size:100%;
+    background-position-y:-0px;}
+.die{
+    display:inline-block;
+    animation:motionBar 5s ;
+    background-color:rgba(255, 255, 255, 0.082);
+    background-image:url(DIÉDRICO.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    width:420px;    height:420px;
+
+    background-size:150%;
+    background-position-x:-150px;
+    transition:background-size  0.15s;
+    animation-duration:2.7s;
+
+}
+.die:hover{
+    background-size:100%;
+    background-position-x:-0px;
+
+
+}
+.firma{
+    display:inline-block;
+    animation:motionBar 5s ;
+    background-color:rgba(255, 255, 255, 0.082);
+    background-image:url(firma.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    width:420px;    height:280px;
+    animation-name:subIconMotion;
+    background-size:50%;
+    transition:background-size  0.15s;
+    animation-duration:2.7s;
+    
+}
+.firma:hover{
+    background-size:120%;
+
+
+}
+.sectorA{
+    display:grid;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row:5;
+    background-color:black;
+    width:100%;
+    height:100%;
+    
+
+}
+.info-etiqueta{
+    display:grid;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:5;
+    grid-row-end:6;
+    background-image:url(etiqueta.png);
+    background-size:1650px;
+    background-position-x:-40px;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+}
+.info{
+    display:grid;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:6;
+    grid-row-end:7;
+    background-color: rgb(0, 0, 0);
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+    grid-template-columns: 222px  820px auto
+}
+.info h2 {
+    margin-top:-50px;
+    margin-left:10px;
+    text-align:left;
+    color: white;
+    font-size:50px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+/*-------------------------------*/
+/*
+.iconCabecera1{
+    border: none solid none;
+    border-radius: 15px 0px 0px 15px;
+    overflow: hidden;
+    display:grid;
+    grid-column:1;
+    grid-row:1;
+    background-color:#4e4e4e;
+
+}
+.iconCabecera2{
+    overflow: hidden;
+    display:grid;
+    grid-column:2;
+    grid-row:1;
+    background-color:#4e4e4e;
+}
+.iconCabecera3{
+    overflow: hidden;
+    display:grid;
+    grid-column:3;
+    grid-row:1;
+    background-color:#4e4e4e;
+}
+.iconCabecera4{
+    overflow: hidden;
+    display:grid;
+    grid-column:4;
+    grid-row:1;
+    background-color:#4e4e4e;
+}
+.iconCabecera5{
+    border: none solid none;
+    border-radius: 0px 15px 15px 0px;
+    overflow: hidden;
+    display:grid;
+    grid-column:5;
+    grid-row:1;
+    background-color:#4e4e4e;
+}*/
+
+
+@media only screen and (max-width:660px){
+    body{
+    margin:0px;
+    display:grid;
+    grid-template-columns:100%;     grid-template-rows:40px 130px 1500px ;
+    background-color:black;
+}
+.sideMenu{width:100%;height:100%;}
+.sideMenu p{text-align:left;font-size:0px;margin-top: 0px;}
+.sideMenu img{width:0px;height:0px;}
+
+.frame{
+    display:grid;
+    grid-column:1;
+    grid-row-start:1; grid-row-end:4;
+    background-image:url(fondo.jpg);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    justify-self: center;
+    grid-template-columns:100%;
+    grid-template-rows:100px 102px auto;
+
+
+}
+.frame h1{
+    margin-top:-13px;
+    text-align:center;
+    color: white;
+    font-size:80px;
+    font-family: 'Ubuntu', sans-serif;
+    animation-name: TextSlideH;
+    animation-duration:5s;
+    grid-column:1;
+    grid-row:2;
+    margin-top:5px;
+    
+    
+    
+}
+.subMenu{
+    
+    display:grid;
+    grid-column-start:1;    grid-column-end:1;
+    grid-row:1;
+    height:75px;
+    width:100%;
+    border: none solid black;
+    background-color:rgb(0, 0, 0);
+    
+    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-rows:1;
+    position: sticky;
+	top:0px;
+}
+.subIcon1{
+    display:grid;
+    grid-column:1;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(hogar.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:1s;
+    background-position: center;
+    background-size:40px;
+    transition:background-size  0.1s;
+}
+
+.subIcon2{
+    display:grid;
+    grid-column:2;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(circulo-de-color.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:1.5s;
+    background-position: center;
+    background-size:40px;
+    transition:background-size  0.1s;
+}
+
+.subIcon3{
+    display:grid;
+    grid-column:3;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(corazon.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:2s;
+    background-position: center;
+    background-size:40px;
+    transition:background-size  0.1s;
+}
+
+.subIcon4{
+    display:grid;
+    grid-column:4;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(diamante.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:2.5s;
+    background-position: center;
+    background-size:40px;
+    transition:background-size  0.1s;
+}
+
+.subIcon5{
+    display:grid;
+    grid-column:5;
+    grid-row:1;
+    width:100%;
+    height:100%;
+    background-image:url(carpeta.png);
+    background-repeat: no-repeat;
+    animation-name:subIconMotion;
+    animation-duration:3s;
+    background-position: center;
+    background-size:40px;
+    transition:background-size  0.1s;
+
+
+}
+.Conjunto1{
+    grid-column:1;
+    grid-row:3;
+}
+.firma{
+    display:block;
+    
+    animation:motionBar 5s ;
+    background-image:url(Firma2.png);
+    background-size:300px;
+    background-position:center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:250px;
+
+    border: 0px solid transparent;
+    border-radius: 0px 0px 10px 10px;
+    animation-name:subIconMotion;
+    animation-duration:3s;
+}
+}
