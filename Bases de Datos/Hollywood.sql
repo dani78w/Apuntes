@@ -50,5 +50,5 @@ INSERT into ACTORES VALUES
 ('Benicio del Toro','M','1942-03-01','USA'),
 ('Tom Holland','M','1942-03-01','USA'),
 ('Dani Rovira','M','1942-03-01','Spain'),
-('Angelina Jolie','M','1942-03-01','USA');
+('Angelina Jolie','F','1942-03-01','USA');
 
