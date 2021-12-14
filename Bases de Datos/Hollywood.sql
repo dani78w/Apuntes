@@ -39,3 +39,16 @@ ALTER TABLE PELICULAS ADD FOREIGN KEY (nom_prot) REFERENCES ACTORES(nombre);
 ALTER TABLE PELICULAS ADD FOREIGN KEY (nom_dir) REFERENCES DIRECTORES(nombre);
 ALTER TABLE CASADOS ADD FOREIGN KEY (nom1) REFERENCES ACTORES(nombre);
 ALTER TABLE CASADOS ADD FOREIGN KEY (nom2) REFERENCES ACTORES(nombre);
+
+INSERT into ACTORES VALUES 
+('Harrison Ford','M','13-01-1942','USA',)
+('Tom Crusie','M','03-07-1962','USA',)
+('Tony Curtis','M','13-01-1925','USA',)
+('Penelope Cruz','F','13-07-1942','Spain',)
+('Leonardo DiCaprio','M','13-01-1972','USA',)
+('Ursula Corbrero','F','13-01-1989','Spain',)
+('Benicio del Toro','M','13-01-1989','USA',)
+('Harrison Ford','M','13-01-1942','USA',)
+('Harrison Ford','M','13-01-1942','USA',)
+('Harrison Ford','M','13-01-1942','USA',)
+('Harrison Ford','M','13-01-1942','USA',)
