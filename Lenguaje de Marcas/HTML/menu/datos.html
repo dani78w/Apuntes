@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="color:white;">
+	<ul class="menu">
+	    <li class="menuOpcion" style=""><a href="menu.html">INICIO</a></li>
+	    <li class="menuOpcion" ><a href="forms.html">FORMULARIO</a></li>
+	    <li class="menuOpcion" ><a href="datos.html">DATOS</a></li>
+	   <li class="menuOpcion" ><a href="listas.html">LISTAS</a></li>
+	</ul>
+	<h1> Formulario DATOS </h1>
+	<p>Rellena el siguiente formulario con tus datos</p>
+
+	
+	<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+		<p>Número de habitaciones: (Ejemplo una respuesta posible)</p>
+			<input type="radio" name="Número de habitaciones: " value="0">0<br>
+			<input type="radio" name="Número de habitaciones: " value="1">1<br>
+			<input type="radio" name="Número de habitaciones: " value="2">2<br>
+			<input type="radio" name="Número de habitaciones: " value="3">3<br>
+			<input type="radio" name="Número de habitaciones: " value="4">4<br>
+
+
+		<p>Conocimientos:(Ejemplo varias respuestas posibles)</p>
+			<input type="checkbox" name="Música">Múscia <br>
+			<input type="checkbox" name="Pintura">Pintura <br>
+			<input type="checkbox" name="Teatro">Teatro <br>
+			<input type="checkbox" name="Ninguno">Ninguno <br><br>
+
+		<label>Nombre: <input type="text" name="Nombre"></label><br><br>
+		<label>Apellidos: <input type="text" name="Apellidos"></label><br><br>
+		<label>Password: <input type="password" name="Password"></label><br><br>	
+		<select name="Animal: ">
+			<option value="Perro">Perro</option>
+			<option value="Gato">Gato</option>
+			<option value="Conejo">Conejo</option>
+			<option value="Ratón">Ratón</option>
+		</select>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Resetear">
+	</form>
+	<div class="flecha"></div>
+</body>
+</html>

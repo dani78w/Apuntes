@@ -1,0 +1,37 @@
+#Declaración e inicializacion de variables
+	Entero i;	Entero k;	Entero acumNegativo;	Lógico flag;	Entero input;	Entero sum;		Entero acumPositivo;
+	i=0;		k=50;		acumNegativo=0;			Flag=F;			input=0;		sum=0;			acumPositivo=0;
+	Entero array(k);
+	Para i=1 hasta k con incremento de 1:
+		array(i)=0;
+	Fin Para;
+#Inicialización del proceso
+	i=0;		acumulador=0;		Flag=0;			input=0;
+	#no inicializo el proceso del array porque el enunciado dice que ya contiene datos.
+#Proceso
+	sum = array(1)+array(20)+array(k);
+	escribir("La suma entre el primer numero , el de la posición 20 y el ultimo es:",sum);
+	Para i=1 hasta k con incremento de 1:
+		Si array(i)<0:
+			acumNegativo=acumulador+1;
+			escribir("Hay:",acumNegativo,"números negativos en el array");
+		Si array(i)>0:
+			acumPositivo=acumPositivo + array(i);
+			escribir("las suma de los numero positivos es",acumPositivo);
+		Fin Si;
+	Fin para
+	Repetir:
+		escribir("Introduzca un número: ")
+		leer(input);
+		Repetir:
+			Si array(i)=input:
+				escribir("El número",input," se encuentra en el array");
+			Fin Si
+		Hasta array(i)=input
+		escribir("¿Desea volver a introducir un número?y/n: ")
+		leer(input)
+		Si input="y"
+			Flag = V;
+		Fin Si
+	Hasta Flag = V
+
