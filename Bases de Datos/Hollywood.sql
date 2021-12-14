@@ -41,14 +41,14 @@ ALTER TABLE CASADOS ADD FOREIGN KEY (nom1) REFERENCES ACTORES(nombre);
 ALTER TABLE CASADOS ADD FOREIGN KEY (nom2) REFERENCES ACTORES(nombre);
 
 INSERT into ACTORES VALUES 
-('Harrison Ford','M','13-01-1942','USA',)
-('Tom Crusie','M','03-07-1962','USA',)
-('Tony Curtis','M','13-01-1925','USA',)
-('Penelope Cruz','F','13-07-1942','Spain',)
-('Leonardo DiCaprio','M','13-01-1972','USA',)
-('Ursula Corbrero','F','13-01-1989','Spain',)
-('Benicio del Toro','M','13-01-1989','USA',)
-('Harrison Ford','M','13-01-1942','USA',)
-('Harrison Ford','M','13-01-1942','USA',)
-('Harrison Ford','M','13-01-1942','USA',)
-('Harrison Ford','M','13-01-1942','USA',)
+('Harrison Ford','M','1942-03-01','USA'),
+('Tom Crusie','M','1942-03-07','USA'),
+('Tony Curtis','M','1942-03-01','USA'),
+('Penelope Cruz','F','1942-03-07','Spain'),
+('Leonardo DiCaprio','M','1942-03-01','USA'),
+('Ursula Corbrero','F','1942-03-01','Spain'),
+('Benicio del Toro','M','1942-03-01','USA'),
+('Tom Holland','M','1942-03-01','USA'),
+('Dani Rovira','M','1942-03-01','Spain'),
+('Angelina Jolie','M','1942-03-01','USA');
+
