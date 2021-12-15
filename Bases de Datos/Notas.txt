@@ -1,1 +1,2 @@
 kahoot : (1,7) ; (4,2) ; ( 5 ) ; (10) ; ( 4 ) = 4.9
+ SELECT NOMBRE FROM ACTORES WHERE SEXO='M' ORDER BY fecha_nac ASC;
