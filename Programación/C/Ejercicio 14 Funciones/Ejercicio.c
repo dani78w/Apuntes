@@ -5,19 +5,28 @@
     	#define tam 10
     	#define ctam 50
     	
+    //cabeceras
+    	int sumaDosNum();
     	
     main(){
-    	
     	setlocale(LC_ALL, "spanish");
-    	char matriz[tam][ctam];
-    	int i = 0;int aux= 0;int a=0; int b=0;
-    	printf("%d",sumaDosNum(a,b));
-    	//iniciacion de matriz
-    	
-		
-	}
-	int sumaDosNum(int num1,int num2){
-    		int suma=0;
-    		suma=num1+num2;
+    	sumaDosNum();
+ 	}
+ 	
+	//definición de funciones
+	int sumaDosNum(){
+			int a = 0;
+			int b = 0;
+			int suma=0;
+			
+			printf("Introduce un número  \n");	
+			scanf("%d",&a);
+		    fflush(stdin);
+		    printf("Introduce un número  \n");	
+			scanf("%d",&b);
+		    fflush(stdin);
+		    
+    		suma=a+b;
+			printf("El resultado es %d",suma);
     		return suma;
 		}
