@@ -2,8 +2,6 @@
     	#include <stdio.h>
     	#include <locale.h>
     	#include <string.h>
-    	#define tam 10
-    	#define ctam 50
     	
     	
     main(){

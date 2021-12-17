@@ -7,6 +7,7 @@
     	
     //cabeceras
     	int sumaDosNum();
+    	setlocale(LC_ALL, "spanish");
     	
     main(){
     	setlocale(LC_ALL, "spanish");
@@ -31,7 +32,7 @@
 			printf("El resultado es %d",suma);
     		return suma;
 		}
-//procediminetos de funciones
+	//procediminetos de funciones
 	void sumaDosNumP(){
 			int a = 0;
 			int b = 0;
