@@ -488,7 +488,7 @@ body{
         display: block;
         height:50px;
       }
-      .topnav a img{
+      .topnav a img{    
           display: inline;
           margin-left:20px;
       }
@@ -497,7 +497,7 @@ body{
           height:70px;
           position: relative;
           top: -10px;
-          left: 90px;
+          left: 64px;
           width:75%;
       }
       

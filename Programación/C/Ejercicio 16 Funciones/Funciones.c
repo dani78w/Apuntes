@@ -15,9 +15,9 @@
 	    		if(inputPositivo()>0){
 	    			printf("la funcion es correcta\n\n");
 				}
-			//funcion2
+			//funcion2 No he sabido hacer la comprobacion
     			printf("El mayor de los numero guardados es  %d \n\n",comparadorNum(num1,num2));
-    		//procedimiento1
+    		//procedimiento1 No he sabido hacer la comprobacion
     			comparacionProced();
 		}
 		//definicion de funciones y procedimientos
