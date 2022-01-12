@@ -17,7 +17,7 @@
     		Area(b,h);
     	
 		}
-		int Area(int x,int y){
+		void Area(int x,int y){
 			int area = 0;
     		area=x*y/2;
     		printf("el area del triangulo es %d",area);

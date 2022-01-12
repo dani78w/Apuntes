@@ -1,4 +1,4 @@
-    //librerias y constantes
+     //librerias y constantes
     	#include <stdio.h>
     	#include <locale.h>
     	#define tam 3
