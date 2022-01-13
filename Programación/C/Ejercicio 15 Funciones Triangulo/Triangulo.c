@@ -15,6 +15,9 @@
 	   		fflush(stdin);
 	   		
     		Area(b,h);
+    		
+    		areaTP(b,a,&area);
+    		printf(%2f,area);
     	
 		}
 		void Area(int x,int y){
@@ -23,5 +26,10 @@
     		printf("el area del triangulo es %d",area);
     		return area;
 		}
+		
+		void areaTP(int base;int altura,float *area){
+		*area = (float)(base*altura)/2;
+		return;
+}
     	
 	
