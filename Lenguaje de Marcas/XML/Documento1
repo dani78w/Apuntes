@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <biblioteca>
+    <libro>
+      <titulo>La vida está en otra parte</titulo>
+      <autor>Milan Kundera</autor>
+      <fecha año"1973"></fecha>
+    </libro>
+    
+    <libro>
+      <titulo>Pantaleón y las visitadoras</titulo>
+      <autor nacimiento"28/03/1936">Mario vargas </autor>
+      <fecha año"1973"></fecha>
+    </libro>
+    
+    <libro>
+      <titulo>Conversación en la catedral</titulo>
+      <autor nacimiento"28/03/1936">Mario vargas </autor>
+      <fecha año"1969"></fecha>
+    </libro>
+  </biblioteca>
