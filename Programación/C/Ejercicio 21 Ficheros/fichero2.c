@@ -30,8 +30,7 @@ void main(){
 		
 
 		
-		
-		fwrite(&cd1,sizeof(cd1),1,fich);	
+	
 	};
 	printf("%d",sizeof(cd1));
 	
