@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios Caja</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perpetual</title>
+</head>
+<body>
+    
+
+    <div class="cabecera">
+        <p class="nombre"> </p>
+    </div>
+
+    <div class="header"></div>
+    <div class="subMenu">
+        <a href="INDEX.html">
+        <div class="subIcon1">
+           <div class="panel">
+               <div class="panelIcon"></div>
+               <div class="panelIcon"></div>
+               <div class="panelIcon"></div>
+               <div class="panelIcon"></div>
+               
+           </div>
+        </div></a>
+       <a href="#popup"><div class="subIcon2"></div></a>
+       <a href="#popuplikes"> <div class="subIcon3"></div></a>
+        <div class="subIcon4"></div>
+        <div class="subIcon5"></div>
+        <div class="logo"></div>
+        <div class="logoPerfil"></div>
+    </div>
+    
+    <!-- FORMULARIO     -->
+	<div style="display:inline-block;width:99%;height:100px;text-align: center;">
+		<h1 style="display:block;">AGREGAR UNA PUBLICACIÓN</h1>
+		<h4 style="display:block;">Formulario de Acceso</h4>
+
+	</div>
+	<hr>
+	<form action="mailto:someone@example.com" method="post" enctype="text/plain"> 
+		
+
+
+			
+		
+			<div style="display:inline-block;width:200px;height:250px;background:lightpink;padding:10px;vertical-align:top;">
+                
+                <label for="avatar">Choose a profile picture:</label>
+
+                <input type="file"
+                       id="avatar" name="avatar"
+                       accept="image/png, image/jpeg">
+				<label>Comentarios<textarea name="comentarios" rows="8" cols="24">Escribe aquí tu comentarios</textarea></label><br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetear">
+
+			</div>
+		
+
+			
+
+            
+		</div>
+
+    
+
+	</form>
+
+    <!-- PUPUP-->  
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <a id="cerrar" href="#">&times;</a>
+            <div class="popupContent">
+                
+                <div class="sliderbody">
+
+                    <div class="marco">
+                        <div class="identificador"> <img src="cabecera.png"></div>
+                        <div class="slider">
+                        <ul>
+                            <li><img src="foto1.png"></li>
+                            <li><img src="foto2.png"></li>
+                            <li><img src="foto3.png"></li>
+                            <li><img src="foto4.png"></li>
+                            <li><img src="foto1.png"></li>
+                        </ul>
+                        </div>
+                    <div class="like"> <img src="like.png"></div>
+                    </div>
+                    
+                
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="popuplikes" class="overlaylikes">
+        <div id="popupBodylikes">
+            <a id="cerrar" href="#">&times;</a>
+            <div class="popupContentlikes">
+                
+                <div class="topnotiPanel">
+                    <div class="notIcon1"></div>
+                    <div class="notIcon2"></div>
+                    <div class="notIcon3"></div>
+                    <div class="notTex">15</div>
+                    <div class="notTex">25</div>
+                    <div class="notTex">55</div>
+                    
+                </div>
+                <div class="notiPanel">
+                    <img src="perfil.jpg" alt="">
+                    <p>DANI.7F HA COMENTADO</p>
+                </div>
+                <div class="notiPanel">
+                    <img src="perfil.jpg" alt="">
+                    <p>DANI.7F HA COMENTADO</p>
+                </div>
+                <div class="notiPanel">
+                    <img src="perfil.jpg" alt="">
+                    <p>DANI.7F HA COMENTADO</p>
+                </div>
+
+                
+            </div>
+            
+        </div>
+        
+
+    </div>
+</body>
+</html>
