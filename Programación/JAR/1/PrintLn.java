@@ -4,7 +4,7 @@
  * @Daniel Arribas Sorando 
  * @10-marzo-2022
  */
-public class Principal{
+public class PrintLn{
     
   
     public static void main  (String[] args){

@@ -1,27 +1,15 @@
-    //librerias y constantes
-    	#include <stdio.h>
-    	#include <locale.h>
-    	#define tam 11
-    	
-    main(){
-    	setlocale(LC_ALL, "spanish");
-    	
-    	char cadena1[tam]="";
-    	char cadena2[tam]="";
-    	
-    	printf("introduzca una palabra de como máximo 10 letras \n");
-    	gets(cadena1);
-	    
-	    printf("introduzca otra palabra de como máximo 10 letras \n");
-    	gets(cadena2);
-	    
-	    if(strcmp(cadena1,cadena2) == 0){
-	    	printf("son iguales \n");
-		}else{
-			printf("no son iguales \n");
-		}
-		
-		system("pause");
-		system("cls");
-		return 0;
-	}	
+
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+struct alumno{
+    char nombre[50];
+    int edad;
+    float peso;
+}alumno1={"Dani",19,73.4},alumno2={};
+
+void main(){
+    setlocale(LC_ALL, "spanish");
+    strcpy(alumno2.nombre,"Lucía");
+    printf("%s",alumno2.nombre);
+}

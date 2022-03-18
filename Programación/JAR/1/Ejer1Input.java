@@ -9,7 +9,7 @@ import java.io.IOException;
  * @Daniel Arribas Sorando 
  * @10-marzo-2022
  */
-public class Ejercicio2{
+public class Ejer1Input{
     
   
     public static void main  (String[] args) throws java.io.IOException{

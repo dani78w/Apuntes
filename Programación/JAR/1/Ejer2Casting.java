@@ -6,7 +6,7 @@ import java.io.IOException;
  * @Daniel Arribas Sorando 
  * @10-marzo-2022
  */
-public class Principal2{
+public class Ejer2Casting{
     
   
     public static void main  (String[] args) throws java.io.IOException{
