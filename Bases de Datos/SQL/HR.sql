@@ -1,5 +1,15 @@
 
 SET SERVEROUTPUT ON
+DECLARE 
+v_num:_emp INTEGER;
+v_id_dep DEPARTMENTS.DEPARTMENT_ID%TYPE;
+
 BEGIN
+v_id_dep := &damedame;
+SELECT COUNT(*) INTO v_id_emp FROM EMPLOYEES
 DBMS_OUTPUT.PUT_LINE('Hola mundo');
+
 END;
+
+
+
