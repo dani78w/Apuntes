@@ -37,7 +37,7 @@ public class Principal
 
         //edad
         System.out.println("Edad: "+pers.getEdad());
-        System.out.println("    Nuevo nombre:");
+        System.out.println("    Nueva edad:");
         pers.setEdad(Integer.parseInt(sc.nextLine()));
         
         //total

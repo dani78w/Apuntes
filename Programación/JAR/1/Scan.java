@@ -18,7 +18,7 @@ public class Scan{
         
         System.out.printf("la cadena es %s",cad);
         
-        
+        sc.close();//para cerrar el fichero interno que genera
         
         
         

@@ -48,5 +48,10 @@ public class Persona
       
            this.edad = edad;
        }
+       
+    //metodos de batalla
+       public String toString(){
+            return nif+" "+nombre+" "+edad;
+       }
 }
 
