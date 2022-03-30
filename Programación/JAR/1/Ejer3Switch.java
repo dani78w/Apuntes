@@ -46,7 +46,7 @@ public class Ejer3Switch{
         }
         if ((year%4)==0 && mes>2){
             acum=acum+1;
-            System.out.printf("El año %d es bisiesto !!! %d",acum);}
+            System.out.printf("El año %d es bisiesto !!!",acum);}
 
         System.out.printf("la fecha es %d",acum);
 
