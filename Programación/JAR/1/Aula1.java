@@ -4,6 +4,7 @@ import java.io.IOException;
 
 public class Aula1{
     public static void main  (String[] args) throws java.io.IOException{
+       
         char car =0;
         char dif =32;
         int aux;
