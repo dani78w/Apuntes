@@ -1,0 +1,26 @@
+let $n := /usuarios/usuario[ends-with(nombre,'n')](:[//altura-//anchura < 8]:)/nombre/text()
+let $e := /usuarios/usuario[ends-with(nombre,'n')](:[/confidencial/contains('email','@')]:)/confidencial/email/text()
+let $t := /usuarios/usuario[ends-with(nombre,'n')]/confidencial/telefono/text()
+let $a := /usuarios/usuario[ends-with(nombre,'n')]/apellido/text()
+
+
+return
+<html lang="es">
+<body>
+<div style="display: block;width:737px;border: 5px solid #000000;">
+  <form action="mailto:{$e}" method="post" enctype="text/plain">
+    <div>
+      <b>Nombre:</b>
+      <input type="text" name="Nombre" value="{$n}" size="100%"/>
+      <b>Apellidos:</b>
+      <input type="text" name="Apellidos" value="{$a}" size="100%"/>
+      <b>Email:</b>
+      <input type="text" name="Email" value="{$e}" size="100%"/>
+      <b>Telefono:</b>
+      <input type="text" name="Telefono" value="{$t}" size="100%"/>
+      <input type="submit" value="Enviar"/>
+    </div>
+  </form>
+</div>
+</body>
+</html>
