@@ -8,8 +8,7 @@
 public class Privado
 {
     private static int num=0;
-    private String nomb="";    
-    final public static double pi=3,2314;
+    private String nomb="";
     
     Privado(String nomb){
         num++;
