@@ -1,0 +1,53 @@
+[	------------- EJERCICIO 1 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  	  <xsl:template match="/">
+  	  </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 2 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+</xsl:stylesheet>
+[	------------- EJERCICIO 3 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+          <xsl:template match="libro">
+          	<xsl:value-of select="autor"/>
+          </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 4 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+          <xsl:template match="libro">
+                <xsl:value-of select="titulo"/>
+          </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 5 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                  <xsl:template match="fechaPublicacion">
+                            <xsl:value-of select="@año"/>
+                  </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 7 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                   <xsl:template match="libro">
+                             <p><xsl:value-of select="autor"/></p>
+                  </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 8 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                   <xsl:template match="libro">
+                             <p><xsl:value-of select="autor"/> escribió <xsl:value-of select="titulo"/></p>
+                  </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 10 -------------		]
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                  <xsl:template match="biblioteca">
+                  <html lang="en">
+                                <body>
+                                                    <xsl:apply-templates select="libro"/>
+                                </body>
+                                </html>
+                  </xsl:template>
+                  
+                   <xsl:template match="libro">
+                             <p><xsl:value-of select="autor"/> escribió <xsl:value-of select="titulo"/></p>
+                  </xsl:template>
+</xsl:stylesheet>
+[	------------- EJERCICIO 11 -------------		]
