@@ -1,10 +1,4 @@
 
-/**
- * Write a description of class AtributoseEstaticos here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class AtributoseEstaticos
 {
     public static void main(String[] args){

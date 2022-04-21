@@ -1,50 +1,80 @@
-import java.nio.charset.StandardCharsets;
+
+import java.util.ArrayList;
 import java.util.Scanner;
-public class Aula2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in, StandardCharsets.UTF_8);
-        Pelicula p1 = new Pelicula();
-        Pelicula p2 = new Pelicula("Iron Man","Matt Holloway");
-        Pelicula p3 = new Pelicula("The Avengers",323232,"Comedia","Art Marcum", new String[]{"Actor1", "Actor2", "Actor3", "Actor4", "Actor5"},321);
-        //proceso
-        System.out.println("Introduce un titulo para la peli");
-            p1.setTitle(sc.nextLine());
-        System.out.println("Introduce un escritor para la peli");
-            p1.setWriter(sc.nextLine());
-        System.out.println("Introduce un numero de capitulos para la peli");
-            p1.setCapNum(Integer.parseInt(sc.nextLine()));
-        System.out.println("Introduce un Genero para la peli");
-            String aux = "";
-            boolean flag = false;
-            while (!flag) {
-                aux = sc.nextLine();
-                if (aux.equalsIgnoreCase("D") || aux.equalsIgnoreCase("S") || aux.equalsIgnoreCase("C") || aux.equalsIgnoreCase("T")) {
-                    flag=true;
-                }else {System.out.println("has introducido un género no valido");}
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.List;
+
+public class Aula2
+{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in,"UTF-8");
+        
+        //importe inicial
+        System.out.println("Importe incial: ");
+        int importeInicial=0;
+        importeInicial= Integer.parseInt(sc.nextLine());
+        //plazo de inversión
+        System.out.println("Plazo de inversion: ");
+        int plazo=0;
+        plazo= Integer.parseInt(sc.nextLine());
+        //tipos de interés
+        System.out.println("Tipos de interés: ");
+        List<Integer> arrayPorcentajes = new ArrayList<>();
+        int salida=0;
+        int decision=1;
+            while(decision==1) {
+                System.out.println("Quieres añadir un tipo de interés?  1-Si 2-No");
+                decision = sc.nextInt();
+                if (decision==1) {
+                    System.out.println("    Introduzca un tipo nuevo :");
+                    int numero=sc.nextInt();
+                    arrayPorcentajes.add(numero);
+                } else {
+                    decision=0;
+                }
             }
-            p1.setGenre(aux);
+            
+        //prints
+            System.out.println("-------------RESULTADOS-------------");
+            System.out.println(arrayPorcentajes);
+            List<Integer> resultados = new ArrayList<>();
+             for(int j=0;j<arrayPorcentajes.size();j++){
+                    resultados.add((arrayPorcentajes.get(j)*importeInicial)/100);
+                    
+                }
 
-        System.out.println("Introduce 5 actores de la peli");
-            String[] actors = new String[5];
-            for (int i = 0; i < actors.length; i++) {
-                actors[i]=sc.nextLine();
+            List<Integer> terminal = new ArrayList<>();
+            boolean flag=false;
+            
+            for(int i=0;i<plazo;i++){
+                
+                   if(flag==false){
+                       for(int j=0;j<arrayPorcentajes.size();j++){
+                           
+                                terminal.add(arrayPorcentajes.get(j)+importeInicial);
+                                System.out.printf("%d ",terminal.get(j));
+                                flag=true;
+                            }
+                    }
+                    else{
+                        for(int j=0;j<arrayPorcentajes.size();j++){
+                            terminal.set(j,null);
+    
+                            terminal.set(j,arrayPorcentajes.get(j)*(i+1)+importeInicial);
+                            System.out.printf("%d ",terminal.get(j));
+                            if(i==(plazo-1)){
+                                System.out.printf("--Monto Final ");
+                            }
+                        }
+                    
+                    }
+                
+               System.out.printf("\n");
             }
-            p1.setActors(actors);
-        System.out.println("Introduce el precio de la peli");
-            p1.setPrice(Integer.parseInt(sc.nextLine()));
-        //proceso de impresión de los objetos
-
-        System.out.print("\n--------OBJETOS--------\n");
-        imprimir(p1);
-        imprimir(p2);
-        imprimir(p3);
-
-
+       
+    
+    
     }
-
-    private static void imprimir(Pelicula p0) {
-        System.out.println(p0.toString());
-    }
-
-
 }
