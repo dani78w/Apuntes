@@ -46,5 +46,5 @@ public class Aula3 {
         System.out.println(p0.toString());
     }
 
-
+//los metodos estaticos se pueden usar sin utilizar un objeto
 }

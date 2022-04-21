@@ -54,4 +54,10 @@ public class Pelicula {;
                 ", price=" + price +
                 '}';
     }
+    
+    protected Object clone(){
+  
+    Pelicula clone= new Pelicula (this.title,this.capNum,this.genre,this.writer,this.actors,this.price);
+    return clone;
+  }
 }
