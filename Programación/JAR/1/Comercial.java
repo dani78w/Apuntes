@@ -6,11 +6,18 @@
  * @version (a version number or a date)
  */
 public class Comercial extends Trabajador{
-    String dietas="";
+    String dietas=" ";
 
     Comercial(String nombre,String ss ,String dni,float salario,String dietas){
         super(nombre,ss,dni,salario);
         this.dietas=dietas;
     }
 
+
+    public String toString() {
+        return "" +
+                super.toString()+
+                "{Comercial: dietas='" + dietas + '\'' +
+                '}';
+    }
 }
