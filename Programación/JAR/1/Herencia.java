@@ -6,7 +6,9 @@ public class Herencia {
         Pepe.setDni("INDIGENA");
         System.out.println(Pepe);
 
-        Comercial Comercial = new Comercial("Paco","pobre","2231232G", (float) 23213.3,"SI");
-        System.out.println(Comercial);
+        Comercial Paco = new Comercial("Paco","pobre","2231232G", (float) 23213.3,"SI");
+        Paco.masDietas(" + OtraDieta");
+        System.out.println(Paco);
+
     }
 }

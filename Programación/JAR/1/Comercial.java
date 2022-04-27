@@ -13,11 +13,16 @@ public class Comercial extends Trabajador{
         this.dietas=dietas;
     }
 
+    public void setDietas(String dietas) {this.dietas = dietas;}
+    public String getDietas() {return dietas;}
 
-    public String toString() {
+    public final String toString() {
         return "" +
                 super.toString()+
                 "{Comercial: dietas='" + dietas + '\'' +
                 '}';
     }
+
+    public void masDietas(String extra){dietas= dietas+extra;}
+
 }
