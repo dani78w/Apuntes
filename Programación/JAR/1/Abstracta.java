@@ -4,11 +4,14 @@
  * @author: 
  * Date: 
  */
-public abstract class Abstracta
+public abstract class Abstracta extends Mates
 {
     //metodos abstractos necesitan ser redefinidos en la clase derivada
-    public int sampleMethod(int y)
-    {
-    return y;
+    public int resultado =0;
+    public abstract void operacion(int num1,int num2);
+    public void mostrar() {
+        System.out.println(resultado + ": resultado");
     }
+    
+    
 }

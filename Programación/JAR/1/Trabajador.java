@@ -29,5 +29,9 @@ public class Trabajador {
                 ", salario=" + salario +
                 '}';
     }
+    
+   
+    
+    
 }
 
