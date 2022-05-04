@@ -8,6 +8,7 @@ public class EjercicioExceptions
         int r = b/a ;
     }
     public static void bucle(){
+        int maximo=0;
         System.out.println("Introduce 6 numeros enteros seguidos");
         Scanner sc = new Scanner(System.in);
         int var = 0;
@@ -15,7 +16,7 @@ public class EjercicioExceptions
             System.out.println("Introduce un numero entero: ");
             var = sc.nextInt();
         }
-        System.out.println("Enorabuena todos los números introducidos son enteros");
+        System.out.println("Enorabuena todos los números introducidos son enteros: "+maximo);
     }
     public static void main(String[] args){
         int a = 0, b = 300 ;
