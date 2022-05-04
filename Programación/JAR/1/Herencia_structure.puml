@@ -1,0 +1,183 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": false,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Herencia",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1989191918 { 
+   	label=Trabajador
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Trabajador1989191918[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Trabajador</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   dni: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nombre: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   salario: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   ss: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getDni(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNombre(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getSalario(): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getSs(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setDni(dni: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setNombre(nombre: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setSalario(salario: float)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setSs(salario: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2404471 { 
+   	label=Mozo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Mozo2404471[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Mozo</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_291586527 { 
+   	label=Comercial
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Comercial291586527[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Comercial</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   dietas: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getDietas(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ masDietas(extra: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setDietas(dietas: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_562741859 { 
+   	label=Herencia
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Herencia562741859[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Herencia</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Herencia562741859 -> Comercial291586527[label="main() -> masDietas()"];
+Herencia562741859 -> Trabajador1989191918[label="main() -> setDni()"];
+Trabajador1989191918 -> Comercial291586527[arrowhead=none, arrowtail=empty, dir=both];
+Trabajador1989191918 -> Mozo2404471[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml
