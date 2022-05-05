@@ -1,5 +1,4 @@
-public class Excepcion
-{
+public class Excepcion extends Throwable {
     
     public static void demoproc() throws IllegalAccessException {
         System.out.println("Capturada la excepción en demoproc" );
