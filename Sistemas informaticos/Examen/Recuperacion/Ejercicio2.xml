@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Bebidas [
+   <!ELEMENT Bebidas (bebida)*>
+   <!ELEMENT bebida ((codigo | nombre), precio)>
+   <!ELEMENT codigo (#PCDATA)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT precio (#PCDATA)>
+   <!ATTLIST bebida id ID #REQUIRED>
+]>
+
+<Bebidas>
+   <bebida id="A1">
+      <nombre>leche</nombre>
+      <precio/>
+   </bebida>
+   
+   <bebida id="A2">
+      <codigo>L47</codigo>
+      <precio/>
+    </bebida>
+    
+    <bebida id="A3">
+      <codigo>L47</codigo>
+      <precio>8</precio>
+    </bebida>
+    
+    <bebida id="A4">
+      <codigo>L49</codigo>
+      <precio>2</precio>
+    </bebida>
+</Bebidas>

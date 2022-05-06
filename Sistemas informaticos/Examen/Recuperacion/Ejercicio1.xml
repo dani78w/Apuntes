@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Mascotas>
+  <Mascota codigo="M1">
+    <Raza tipo="Perro">Pitbull</Raza>
+    <Mote>Rayo</Mote>
+  </Mascota >
+  
+  <Mascota codigo="M2">
+    <Raza tipo="Hamster">Campbell</Raza>
+    <Mote>Trueno</Mote>
+    <Mote>Dentado</Mote>
+  </Mascota >
+  
+  <Mascota codigo="M3">
+    <Raza tipo="Perro">Ron</Raza>
+    <Mote>Perrete</Mote>
+    <Mote>Chucho</Mote>
+  </Mascota >
+
+</Mascotas>

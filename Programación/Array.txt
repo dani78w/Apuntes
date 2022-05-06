@@ -1,0 +1,20 @@
+System.arraycopy(array original, posicion original , array destino , posicion destino , numero de elemntos)
+ABCD EFGHI  ---> EFHBI 
+ ^  	^ 
+
+java.util.GregorianCalendar
+Date hoy = new Date();
+sout(hoy)----> 28/03/2002; %t,hoy
+
+java.text.DateFormat
+DateFormat formats= DateFormat.getDateInstance()
+sout(formato(hoy)) 
+corto medio largo completo
+
+sout(formato.format(DateFormat.short,Locale.UK))
+sout(formato.format(DateFormat.medium,Locale.UK))
+sout(formato.format(DateFormat.long,Locale.UK))
+sout(formato.format(DateFormat.full,Locale.UK))
+Locale fCast= new Locale("es","Es","Traditional.Win")
+
+Date dt =gc.getTime();

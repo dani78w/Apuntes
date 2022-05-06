@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine [
+   <!ELEMENT cine (pelicula*)>
+  
+  <!ELEMENT pelicula (titulo,director,estreno,reparto+,recaudación)>
+  <!ATTLIST pelicula categoria CDATA #REQUIRED>
+  <!ELEMENT titulo (#PCDATA)>
+    <!ATTLIST titulo idioma CDATA #IMPLIED>
+  <!ELEMENT director (#PCDATA)>
+  <!ELEMENT estreno (#PCDATA)>
+  <!ELEMENT reparto (#PCDATA)>
+  <!ELEMENT recaudación EMPTY>
+]>
+
+<cine>
+    <pelicula categoria="accion">
+        <titulo idioma="ingles">Mad Max</titulo>
+        <director>George Miller</director>
+        <estreno>15 mayo 2015</estreno>
+        <reparto>Tom Hardy</reparto>
+        <reparto>Charlize Theron</reparto>
+        <reparto>Nicholas Hoult</reparto>
+        <recaudación/>
+    </pelicula>
+    
+    <pelicula categoria="animacion">
+        <titulo>Inside Out</titulo>
+        <director>Pete Docter</director>
+        <estreno>17 junio 2015</estreno>
+        <reparto>Amy Poehler</reparto>
+        <reparto>Phyllis Smith</reparto>
+        <reparto>Bill Hader</reparto>
+        <recaudación/>
+    </pelicula>
+</cine>

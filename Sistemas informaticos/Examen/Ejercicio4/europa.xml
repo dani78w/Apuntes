@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE continente [
+  <!ELEMENT continente (destinos+,ciudades+)>
+  <!ATTLIST continente nombre ID #REQUIRED >
+  
+    <!ELEMENT destinos (país*)>
+      <!ELEMENT país EMPTY>
+      <!ATTLIST país  id ID #REQUIRED>
+      <!ATTLIST país nombre CDATA #IMPLIED>
+       
+    <!ELEMENT ciudades (ciudad+)>
+      <!ELEMENT ciudad (#PCDATA)>
+      <!ATTLIST ciudad cod CDATA #IMPLIED>
+    
+    
+]>
+
+<continente nombre="Europa">
+   <destinos>
+      <país id="ESP" nombre="España"/>
+      <país id="IT" nombre="Italia"/>
+      <país id="FR" nombre="Francia"/>
+      <país id="POR" nombre="Portugal"/>
+   </destinos>
+   <ciudades>
+      <ciudad cod="ESP">Barcelona</ciudad>
+      <ciudad>Madrid</ciudad>
+      <ciudad>Sevilla</ciudad>
+      <ciudad cod="POR">Lisboa</ciudad>
+      <ciudad cod="FR">París</ciudad>
+   </ciudades>
+</continente>

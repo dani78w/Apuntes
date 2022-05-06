@@ -1,0 +1,13 @@
+[---- EJERCICIO 1 ----]
+	Riesgo: Está sometida a un factor de riesgo debido a falta de buenas condiciones de seguridad Riesgo Caerse 
+	Daño: Físico . Fractura en la pierna
+	Medida : utilizar anclajes a la estructura como cuerdas
+[---- EJERCICIO 2 ----]
+	Los principales riesgos a los que se expone son la Caída de personas al mismo o a distinto nivel y contactos eléctricos
+	Está sometida a un factor de riesgo debido a falta de buenas condiciones de seguridad y a un factor ambiental.
+[---- EJERCICIO 3 ----]
+	Si la empresa está incumpliendo todas las obligaciones especificas de los empresarios.
+[---- EJERCICIO 4 ----]
+	Incumplio la obligacion de proveer de equipos de proteccion individual y la obligacion de proveer
+	equipos de trabajo en buen estado a los trabajadores.
+[---- EJERCICIO 5 ----]

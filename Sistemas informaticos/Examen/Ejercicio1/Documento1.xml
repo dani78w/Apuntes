@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+
+  <libro>
+    <titulo>La vida está en otra parte</titulo>
+    <autor>Milan Kundera</autor>
+    <fechaPublicación año="1973"></fechaPublicación>
+  </libro>
+  
+  <libro>
+    <titulo>Pantaleón y las visitadores</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicación año="1973"></fechaPublicación>
+  </libro>
+  
+  <libro>
+    <titulo>Conversación en la cartedral</titulo>
+    <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+    <fechaPublicación año="1969"></fechaPublicación>
+  </libro>
+  
+  <libro>
+    <titulo>Nuevo Libro</titulo>
+    <autor fechaNacimiento="15/04/02">Daniel Arribas</autor>
+    <fechaPublicación año="2022"></fechaPublicación>
+  </libro>
+  
+</biblioteca>

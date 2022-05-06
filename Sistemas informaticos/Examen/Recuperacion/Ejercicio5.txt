@@ -1,0 +1,22 @@
+Nombre = "Daniel Arribas Sorando"
+
+Ejercicio	1.- //propietario[nombre="Nuria"]/nombre/@sexo
+Resultado	sexo="F"
+
+Ejercicio	2.- //libro[precio>30]/titulo/text()
+Resultado	Las reliquias de la muerte
+
+Ejercicio	3.- //libro[publicacion=2014]
+Resultado	<libro>
+  		<titulo>Las reliquias de la muerte</titulo>
+  		<autor>Fernando Fernan Gomez</autor>
+  		<formato>Clásico</formato>
+  		<publicacion>2014</publicacion>
+  		<precio>32.5</precio>
+		</libro>
+
+Ejercicio	4.- /libreria/propietario[telefono=/libreria/telefono]/nombre/text()
+Resultado	Miguel
+
+COMENTARIO -> 	EN EL XML EL NUMERO DE MIGUEL NO ES EL MISMO QUE EL DE LA LIBRERÍA ASIQUE LO HE
+		CAMBIADO PARA QUE SEAN IGUALES

@@ -1,0 +1,128 @@
+DANIEL ARRIBAS SORANDO 
+EJERCICIO 1--------------------------------
+	let $a := count( //alumnos/alumno/nombre)
+	let $p := count( //alumnos/profesor/nombre)
+	return  <cantidades>
+          	 	<alumnos>{$a}</alumnos>
+         	 	<profesores>{$p}</profesores>
+     		</cantidades>
+RESULTADO----------------------------------
+	<cantidades>
+  		<alumnos>3</alumnos>
+  		<profesores>0</profesores>
+	</cantidades>
+EJERICICIO 2
+	let $r := //alumno[year-from-date(fecha_nacimiento)=2001 or year-from-date(fecha_nacimiento)=1999]
+	let $a := $r/nombre/text()
+	let $b := $r/apellido/text()
+
+	return 
+		<alumnos>
+  			<nombres>{$a}</nombres>
+  			<apellidos>{$b}</apellidos>
+		</alumnos>
+RESULTADO----------------------------------
+		<alumnos>
+  			<nombres>SergioNuria</nombres>
+ 			 <apellidos>GarciaFernandez</apellidos>
+		</alumnos>
+
+EJERCICIO 3--------------------------------
+	for $r in //profesores/profesor[@grado="DAW" or @grado="DAM" or @grado="ASIR"]
+	order by //profesores/profesor/fecha_nacimineto ascending
+	return <info-pro>{$r}</info-pro>
+RESULTADO----------------------------------
+	<info-pro>
+  		<profesor cod="COD-1" grado="ASIR">
+    			<nombre>Jon</nombre>
+    			<apellido>Zamora</apellido>
+    			<fecha_nacimiento>1990-10-10</fecha_nacimiento>
+  		</profesor>
+	</info-pro>
+	<info-pro>
+ 		<profesor cod="COD-2" grado="DAM">
+    			<nombre>Fernando</nombre>
+    			<apellido>Garcia</apellido>
+    			<fecha_nacimiento>1960-12-03</fecha_nacimiento>
+  		</profesor>
+	</info-pro>
+	<info-pro>
+  		<profesor cod="COD-3" grado="DAW">
+    			<nombre>Pilar</nombre>
+    			<apellido>Afuera</apellido>
+    			<fecha_nacimiento>1954-27-08</fecha_nacimiento>
+  		</profesor>
+	</info-pro>
+EJERCICIO 4--------------------------------
+	let $r := //alumnos/alumno
+	let $a := $r[not(@ciudad="Madrid")]/nombre/text()
+	let $p := $r[not(@ciudad="Madrid")]/apellido/text()
+
+	return 	<alumnos>
+        		<nombres>{$a}</nombres>
+        		<apellidos>{$p}</apellidos>
+      		</alumnos>
+RESULTADO----------------------------------
+	<alumnos>
+  		<nombres>SergioNuria</nombres>
+  		<apellidos>GarciaFernandez</apellidos>
+	</alumnos>
+
+EJERCICIO 5--------------------------------
+	let $r := //alumnos/alumno
+	for $a in $r[estudios/@tipo="superiores" and string-length(nombre/text())<7]/nombre/text()
+	return 	<alumno>
+        		<nombres>{$a}</nombres>
+       		</alumno>
+RESULTADO----------------------------------
+	<alumno>
+  		<nombres>Sergio</nombres>
+	</alumno>
+	<alumno>
+  		<nombres>Nuria</nombres>
+	</alumno>
+EJERCICIO 6---------------------------------
+	let $max := max((//alumno/nota_media))
+	let $min := min((//alumno/nota_media))
+	for $a in //alumno[nota_media=$max]
+	for $b in //alumno[nota_media=$min]
+	return 
+	<alumnos>
+  		<mejor_media>{$a}</mejor_media>
+  		<peor_media>{$b}</peor_media>
+	</alumnos>
+RESULTADO----------------------------------
+	<alumnos>
+  		<mejor_media>
+    			<alumno DNI="DNI-03" ciudad="Barcelona">
+      				<nombre>Nuria</nombre>
+     			 	<apellido>Fernandez</apellido>
+      				<fecha_nacimiento>1999-01-01</fecha_nacimiento>
+      				<estudios tipo="superiores">True</estudios>
+      				<nota_media>10</nota_media>
+    			</alumno>
+  		</mejor_media>
+  		<peor_media>
+   			 <alumno DNI="DNI-02" ciudad="Fuenlabrada">
+      				<nombre>Sergio</nombre>
+      				<apellido>Garcia</apellido>
+      				<fecha_nacimiento>2001-07-11</fecha_nacimiento>
+      				<estudios tipo="superiores">True</estudios>
+      				<nota_media>5</nota_media>
+    			</alumno>
+  		</peor_media>
+	</alumnos>
+EJERCICIO 7---------------------------------
+	let $b := //profesor[@grado="DAM"]/apellido
+	let $r := //alumno[apellido=$b]
+	return <alum>{$r}</alum>
+RESULTADO----------------------------------
+	<alum>
+  		<alumno DNI="DNI-02" ciudad="Fuenlabrada">
+    			<nombre>Sergio</nombre>
+    			<apellido>Garcia</apellido>
+    			<fecha_nacimiento>2001-07-11</fecha_nacimiento>
+    			<estudios tipo="superiores">True</estudios>
+    			<nota_media>5</nota_media>
+  		</alumno>
+	</alum>
