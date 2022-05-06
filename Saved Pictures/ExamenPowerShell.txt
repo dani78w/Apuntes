@@ -1,0 +1,7 @@
+[ EJERCICIO 1 ]
+	Import-Csv .\datos.txt -Delimiter " " -Header Nombre,Grado,Nota,Fecha |select Nombre,Nota | sort  {[int]$_.Nota} | Select-Object -Index 0
+[ EJERCICIO 2]
+	Import-Csv .\datos.txt -Delimiter " " -Header Nombre,Grado,Nota,Fecha |select * | sort  {[int]$_.Nota} -descending| Select-Object -Index 0,1,2
+[ EJERCICIO 3]
+	Import-Csv .\datos.txt -Delimiter " " -Header Nombre,Grado,Nota,Fecha |where-object {$_.Nota -lt 4}|select nombre,grado | Sort-Object {$_.Grado } -descending
+
