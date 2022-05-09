@@ -1,4 +1,2 @@
-﻿#EJERCICIO 1
-$saludos="Saludos "
-$nombre=read-host 'Nombre'
-echo $saludos$nombre
+﻿#EJERCICIO 2
+	write-host (2+1)
