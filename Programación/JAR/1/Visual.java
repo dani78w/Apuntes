@@ -4,6 +4,7 @@ import java.io.IOException;
 
 public class Visual  {
 public static void main(String args[]) throws InterruptedException, IOException {
+       /*
         JFrame frame = new JFrame("GIT");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(120, 120);
@@ -13,9 +14,7 @@ public static void main(String args[]) throws InterruptedException, IOException 
         frame.getContentPane().add(JButton); // Agrega el botón al panel de contenido del marco
         frame.setVisible(true);
     int i = 0;
-    Runtime runTime = Runtime.getRuntime();
-    String directorio ="C:\\Users\\AlumnoM\\Documents\\Apuntes\\autocommit.bat";
-    Process process = runTime.exec(directorio);
+
     while(i<100){
         TimeUnit.MICROSECONDS.sleep(200);
         JButton.setText(String.valueOf(i));
@@ -23,7 +22,11 @@ public static void main(String args[]) throws InterruptedException, IOException 
         i++;
 
         }
-
+       */
+    
+    Runtime runTime = Runtime.getRuntime();
+    String directorio ="C:\\Users\\AlumnoM\\Documents\\Apuntes\\autocommit.bat";
+    Process process = runTime.exec(directorio);
 
     }
 }
