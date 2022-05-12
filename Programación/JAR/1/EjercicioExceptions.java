@@ -1,25 +1,25 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class EjercicioExceptions
-{
+public class EjercicioExceptions {
 
     public static boolean bucle() throws Exception {
 
         System.out.println("Introduce 6 numeros enteros seguidos");
         Scanner sc = new Scanner(System.in);
         int var;
-        for (int i = 0; i < 6 ; i++) {
+        for (int i = 0; i < 6; i++) {
             System.out.println("Introduce un numero entero: ");
             var = sc.nextInt();
-            if (var < 0 ) {
+            if (var < 0) {
                 throw new Exception("Número no puede ser negativo");
             }
         }
         System.out.println("Enorabuena todos los números introducidos son enteros: ");
         return true;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
 
         /*
@@ -38,16 +38,16 @@ public class EjercicioExceptions
         */
 
         //ejercicio2
-        boolean flag=false;
+        boolean flag = false;
         do {
-            try{
-                flag=bucle();
-            }catch(InputMismatchException e2){
+            try {
+                flag = bucle();
+            } catch (InputMismatchException e2) {
                 System.out.println("el numero introducido no es entero");
-            }catch (Exception e1){
+            } catch (Exception e1) {
                 System.out.println("el numero introducido no es positivo");
             }
-        }while(!flag);
+        } while (!flag);
 
     }
 }
