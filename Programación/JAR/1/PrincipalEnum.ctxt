@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.target=PrincipalEnum
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PrincipalEnum\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ ClaseEnum\ diaT\ \=\ ClaseEnum.TUESDAY;\r\n\ \ \ \ \ \ \ \ \ \ \ \ ClaseEnum\ diaJ\ \=\ ClaseEnum.THURSDAY;\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.name());\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(ClaseEnum.THURSDAY);\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.name());\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(ClaseEnum.THURSDAY);\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.ordinal());\ //posicion\ de\ la\ constante\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ ClaseEnum[]\ dias\ \=\ ClaseEnum.values();\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println(dias[1].name());\ //nombre\ de\ la\ constante\r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.compareTo(diaJ));\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.compareTo(dias[1]));\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(diaT.equals(diaJ));\ //comparan\ por\ posiciones\r\n
 comment1.params=
 comment1.target=void\ main()
-numComments=2
+comment2.params=dias
+comment2.target=void\ ejercicio1(ClaseEnum[])
+numComments=3
