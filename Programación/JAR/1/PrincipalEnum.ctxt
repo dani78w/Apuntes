@@ -4,5 +4,5 @@ comment0.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ ClaseEnum\ diaT\ \=\ ClaseEnum.TUESDAY
 comment1.params=
 comment1.target=void\ main()
 comment2.params=dias
-comment2.target=void\ ejercicio1(ClaseEnum[])
+comment2.target=void\ ejercicio(ClaseEnum[])
 numComments=3

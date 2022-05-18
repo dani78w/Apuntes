@@ -27,10 +27,13 @@ public class PrincipalEnum
             //pedir un dia de la semana por pantalla y controlar que ese dia de la semana
             //sea correcto mediante una clase enumerada
             ClaseEnum[] dias = ClaseEnum.values();
-            ejercicio1(dias);
-            
+            ejercicio(dias);
+            //obtiene el monday en constante
+
+
     }
-    public static void ejercicio1(ClaseEnum[] dias){
+    public static void ejercicio(ClaseEnum[] dias){
+            System.out.println("Ejercicio primera forma");
             Scanner sc = new Scanner(System.in, StandardCharsets.UTF_8);
             String dia= sc.nextLine();
             String aux= " ";
@@ -42,7 +45,7 @@ public class PrincipalEnum
                     tam = tam + 1;
                 }while(tam>0);
             }catch (java.lang.ArrayIndexOutOfBoundsException e){
-                System.out.println("El tamaño del enum es: "+tam);
+                System.out.println("    "+"El tamaño del enum es: "+tam);
             }
             int x=0;
             boolean flag = false;
@@ -53,12 +56,30 @@ public class PrincipalEnum
                     
                 }
             }
-            System.out.println("la posicion del dia dentro del enum es : "+x);
+            System.out.println("    "+"la posicion del dia dentro del enum es : "+x);
             if (flag){
-                System.out.println(dia+" existe en el enum");
+                System.out.println("    "+dia+" existe en el enum");
             }else {
-                System.out.println(dia+" no existe en el enum");
+                System.out.println("    "+dia+" no existe en el enum");
             }
+            //EJERCICIO DE LA OTRA FORMA
+            System.out.println("Ejercicio de la otra forma");
+            dia= sc.nextLine();
+            int i=0;
+            flag=false;
+            do {
+                if (ClaseEnum.valueOf(String.valueOf(dias[i]))!=null){
+                    flag=true;
+                    i=i+1;
+                }
+            }while(i<tam);
+            if (flag){
+                System.out.println("    "+dia+" existe en el enum");
+            }else {
+                System.out.println("    "+dia+" no existe en el enum");
+            }
+
+
     }
 
 }
