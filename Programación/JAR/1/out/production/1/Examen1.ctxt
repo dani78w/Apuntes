@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Examen1
+comment0.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ CLASE\ ELECTRODOMESTICO\ \ \ \ \ \ CLASE\ FRIGORIFICO\ \ \ \ \ \ \ \ \ \ \ CLASE\ PRINCIPAL\r\natributo\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ consumo(real)\ \ \ \ \ \ \ \ \ \ \ \ hereda\ de\ electrodomestico\ \ \ \ \ 1Generar\ un\ objeto\ frigorifico\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ modelo(alfanumerico)\ \ \ \ \ temperatura(real)Grados\u00BAC\ \ \ \ \ \ 2Solicitando\ datos\ por\ pantalla\r\nconstuctores\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3Controlar\ con\ excepciones\ (de\ forma\ repetitiva)\:\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ por\ defecto\ \ \ \ \ \ \ \ \ \ \ \ \ \ no\ tiene\ por\ defecto\ \ \ \ \ \ \ \ \ \ \ \ \ \ -Controlar\ que\ los\ datos\ son\ numericos\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ todos\ los\ atributos\ \ \ \ \ \ todos\ los\ atributos\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -Que\ el\ modelo\ no\ tenga\ ningun\ digito\r\nmetodos\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 4Mostrar\ por\ pantalla\ el\ objeto\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ getter\ seter\ toString\ \ \ \ getter\ seter\ toString\ \ \ \ \ \ \ \ \ \ 5Mostrar\ por\ pantalla\ la\ conversion\ al\ farenheit;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ "modelo\ \ sdasd222+\ \ \ \ \ \ \ "modelo\ \ sdasd222\ \ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ consumo\ 23123123"\ \ \ \ \ \ \ consumo\ 23123123\ \ \ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temperatura\ 213123C\u00BA"\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pasoFarenheit(real)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\u00BAC*9/5)+32\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=Frigorifico\ generarObjeto()
+comment3.params=f
+comment3.target=void\ imprimirObjeto(Frigorifico)
+numComments=4

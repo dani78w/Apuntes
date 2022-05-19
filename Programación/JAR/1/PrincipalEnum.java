@@ -63,21 +63,7 @@ public class PrincipalEnum
                 System.out.println("    "+dia+" no existe en el enum");
             }
             //EJERCICIO DE LA OTRA FORMA
-            System.out.println("Ejercicio de la otra forma");
-            dia= sc.nextLine();
-            int i=0;
-            flag=false;
-            do {
-                if (ClaseEnum.valueOf(String.valueOf(dias[i]))!=null){
-                    flag=true;
-                    i=i+1;
-                }
-            }while(i<tam);
-            if (flag){
-                System.out.println("    "+dia+" existe en el enum");
-            }else {
-                System.out.println("    "+dia+" no existe en el enum");
-            }
+            
 
 
     }
